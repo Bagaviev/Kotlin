@@ -1,0 +1,9 @@
+Работа в сосноли такая же как и в случае с Java.
+
+Компилим: kotlinc file.kt
+Запускаем: kotlin filekt
+Jar create: kotlinc hello.kt -include-runtime -d hello.jar
+Jar run: java -jar file.jar (джарник норм запускается на исполнение в cli, но кликом в винде не хочет)
+
+
+Появилась возможность работы в интерактивном режиме как в Петухоне.
