@@ -5,23 +5,23 @@ files:
   visible: true
   placeholders:
   - offset: 53
-    length: 10
+    length: 22
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 53
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: 'var value: Int? = null'
-  - offset: 110
-    length: 6
+  - offset: 122
+    length: 99
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 110
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       if (value == null) {
@@ -65,5 +65,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 08 Sep 2021 09:28:08 UTC
 record: -1

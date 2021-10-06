@@ -5,13 +5,13 @@ files:
   visible: true
   placeholders:
   - offset: 132
-    length: 6
+    length: 96
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 132
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: customer.orders.flatMap { it.products }.sumByDouble
       { it.price }
@@ -130,5 +130,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 07 Sep 2021 10:17:56 UTC
 record: -1

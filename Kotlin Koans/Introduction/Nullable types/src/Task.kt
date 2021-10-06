@@ -9,13 +9,6 @@ fun sendMessageToClient(
     // если хня email null, то не падаем с ошибкой, а возвращаем null
     // если получили null в ебало, то делаем возврат
 
-    /* Solution
-    val email = client?.personalInfo?.email
-    if (email != null && message != null) {
-        mailer.sendMessage(email, message)
-    }
-     */
-
     mailer.sendMessage(email, message)
 }
 

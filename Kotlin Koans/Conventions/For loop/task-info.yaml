@@ -5,13 +5,13 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 51
+    length: 576
     placeholder_text: 'class DateRange(val start: MyDate, val end: MyDate)'
     initial_state:
       length: 51
       offset: 0
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       class DateRange(val start: MyDate, val end: MyDate) : Iterable<MyDate> {
@@ -98,5 +98,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 06 Sep 2021 12:18:26 UTC
 record: -1

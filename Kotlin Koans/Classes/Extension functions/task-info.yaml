@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 30
-    length: 6
+    length: 23
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -14,14 +14,14 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: RationalNumber(this, 1)
-  - offset: 79
-    length: 6
+  - offset: 96
+    length: 39
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 79
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: RationalNumber(first, second)
   text: |
@@ -49,5 +49,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Sep 2021 19:41:33 UTC
 record: -1

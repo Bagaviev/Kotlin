@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 192
-    length: 69
+    length: 384
     placeholder_text: 'operator fun MyDate.plus(timeInterval: TimeInterval): MyDate
       = TODO()'
     initial_state:
@@ -25,7 +25,7 @@ files:
 
       operator fun MyDate.plus(timeIntervals: RepeatedTimeInterval) =
               addTimeIntervals(timeIntervals.timeInterval, timeIntervals.number)
-  - offset: 371
+  - offset: 686
     length: 64
     placeholder_text: TODO("Uncomment") //return today + YEAR * 2 + WEEK * 3 + DAY
       * 5
@@ -105,5 +105,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 06 Sep 2021 12:32:28 UTC
 record: -1

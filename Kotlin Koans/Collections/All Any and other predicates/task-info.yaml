@@ -5,16 +5,16 @@ files:
   visible: true
   placeholders:
   - offset: 119
-    length: 6
+    length: 117
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 119
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: customers.all { it.city == city }
-  - offset: 250
+  - offset: 361
     length: 6
     placeholder_text: TODO()
     initial_state:
@@ -24,7 +24,7 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: customers.any { it.city == city }
-  - offset: 365
+  - offset: 476
     length: 6
     placeholder_text: TODO()
     initial_state:
@@ -34,7 +34,7 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: customers.count { it.city == city }
-  - offset: 505
+  - offset: 616
     length: 6
     placeholder_text: TODO()
     initial_state:
@@ -180,5 +180,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 07 Sep 2021 09:57:35 UTC
 record: -1

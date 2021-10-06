@@ -5,13 +5,13 @@ files:
   visible: true
   placeholders:
   - offset: 26
-    length: 10
+    length: 128
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 26
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       fun <K, V> buildMap(build: HashMap<K, V>.() -> Unit): Map<K, V> {
@@ -50,5 +50,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 08 Sep 2021 09:45:25 UTC
 record: -1

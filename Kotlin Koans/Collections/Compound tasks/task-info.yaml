@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 193
-    length: 6
+    length: 238
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -19,7 +19,7 @@ files:
                   .filter(Order::isDelivered)
                   .flatMap(Order::products)
                   .maxBy(Product::price)
-  - offset: 393
+  - offset: 625
     length: 6
     placeholder_text: TODO()
     initial_state:
@@ -32,14 +32,14 @@ files:
       return customers
                   .flatMap(Customer::getOrderedProducts)
                   .count { it == product }
-  - offset: 462
-    length: 10
+  - offset: 685
+    length: 48
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 462
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: orders.flatMap(Order::products)
   text: |
@@ -173,5 +173,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 07 Sep 2021 11:48:26 UTC
 record: -1

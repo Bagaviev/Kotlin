@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 91
-    length: 487
+    length: 325
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 91
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       val email = client?.personalInfo?.email
           if (email != null && message != null) {

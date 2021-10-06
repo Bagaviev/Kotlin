@@ -5,13 +5,13 @@ files:
   visible: true
   placeholders:
   - offset: 74
-    length: 3
+    length: 9
     placeholder_text: '   '
     initial_state:
       length: 3
       offset: 74
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: ': Nothing'
   text: |-
@@ -55,5 +55,8 @@ files:
         fun testLargeNumber() = testAge(200)
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Sep 2021 16:21:59 UTC
 record: -1

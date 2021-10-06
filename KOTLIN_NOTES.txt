@@ -1,9 +1,59 @@
+Scope functions kt
+
+(Let apply) with run also
+Позволяют вызывать функции на объекте без повтора его имени
+
+
+Extensions kt
+
+Можно добавить метод к классу без наследования
+Типа: Int.multiply(cnt: Int) { it * cnt }
+Потом можно будет вызвать 5.multiply(3)
+
+
+Java 2 Kt conv constr err
+
+Когда исходный listener свой в recyclerView был на Java, потом конвертнули через Ide на Kt, интерфейс стал красным
+Помогло object : TextWatcher перед импелемент сделать
+Logic ops Kt
+
+and full, && lazy
+& отсутствует
+
+
+Companion classname
+
+Intent kt: OtherActivity::class.java
+Companion obj при получении class name через javaClass.simpleName всегда свой объект возвращает. Поэтому статик метод для логов сделать не удалось, пришлось дублировать его в каждой активити.
+
+
+Kotlin moments [2]
+
+Без запятых, будто Python с Java скрестили
+Есть файлы kt, есть классы
+Первые тупа main метод, без класса работает
+Вторые класс как в java
+?. Safe call
+?: Elvis
+!! NotNull
+Type? nullable / notNull
+
+
+Kotlin moments [1]
+
+Компилится из строки также как java.
+kotlinc file.kt
+kotlin filekt
+Jar cr: kotlinc hello.kt -include-runtime -d hello.jar
+Jar rn: java -jar file.jar
+Есть интеракт консоль как в python
+
+
 Работа в сосноли такая же как и в случае с Java.
 
 Компилим: kotlinc file.kt
 Запускаем: kotlin filekt
 Jar create: kotlinc hello.kt -include-runtime -d hello.jar
 Jar run: java -jar file.jar (джарник норм запускается на исполнение в cli, но кликом в винде не хочет)
-
 
 Появилась возможность работы в интерактивном режиме как в Петухоне.

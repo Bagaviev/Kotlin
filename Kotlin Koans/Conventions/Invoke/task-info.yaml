@@ -4,14 +4,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 123
-    length: 6
+  - offset: 145
+    length: 19
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 123
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       numberOfInvocations++
@@ -52,5 +52,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 06 Sep 2021 12:53:31 UTC
 record: -1

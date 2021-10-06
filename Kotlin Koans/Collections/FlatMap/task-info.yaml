@@ -4,24 +4,24 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 113
-    length: 6
+  - offset: 136
+    length: 0
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 113
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: orders.flatMap(Order::products)
-  - offset: 241
-    length: 6
+  - offset: 306
+    length: 0
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 241
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: customers.flatMap(Customer::getOrderedProducts).toSet()
   text: |
@@ -143,5 +143,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 07 Sep 2021 11:19:19 UTC
 record: -1

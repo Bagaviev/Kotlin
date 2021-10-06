@@ -10,7 +10,7 @@
 
 // 4) Type? [nullable / notnull types]
 // str: String? - значит, что в str можно заассайнить null
-
+/*
 fun main() {
     val s: String? = null;
     var h = s ?: "sss";
@@ -19,4 +19,22 @@ fun main() {
 
 fun method(): Int {
     return 4
+}
+*/
+
+fun main() {
+    test(MyDate(2014, 5, 8), MyDate(2014, 9, 23))
+}
+
+data class MyDate(val year: Int, val month: Int, val dayOfMonth: Int) {
+    operator fun compareTo(other: MyDate) = when {
+        year != other.year -> year - other.year
+        month != other.month -> month - other.month
+        else -> dayOfMonth - other.dayOfMonth
+    }
+}
+
+fun test(date1: MyDate, date2: MyDate) {
+    // this code should compile:
+    println(date1 < date2)
 }

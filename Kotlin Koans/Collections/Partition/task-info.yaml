@@ -5,13 +5,13 @@ files:
   visible: true
   placeholders:
   - offset: 134
-    length: 6
+    length: 143
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 134
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       customers.filter {
@@ -126,5 +126,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 07 Sep 2021 11:11:17 UTC
 record: -1

@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 72
-    length: 6
+    length: 38
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -14,7 +14,7 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: expr.value
-  - offset: 101
+  - offset: 133
     length: 6
     placeholder_text: TODO()
     initial_state:
@@ -24,18 +24,18 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: eval(expr.left) + eval(expr.right)
-  - offset: 119
-    length: 14
+  - offset: 151
+    length: 17
     placeholder_text: interface Expr
     initial_state:
       length: 14
       offset: 119
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: sealed class Expr
-  - offset: 162
-    length: 4
+  - offset: 197
+    length: 6
     placeholder_text: Expr
     initial_state:
       length: 4
@@ -44,8 +44,8 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: Expr()
-  - offset: 212
-    length: 4
+  - offset: 249
+    length: 6
     placeholder_text: Expr
     initial_state:
       length: 4
@@ -88,5 +88,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 05 Sep 2021 19:15:13 UTC
 record: -1

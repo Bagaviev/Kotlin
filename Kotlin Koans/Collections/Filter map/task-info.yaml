@@ -5,23 +5,23 @@ files:
   visible: true
   placeholders:
   - offset: 106
-    length: 6
+    length: 33
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 106
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: customers.map { it.city }.toSet()
-  - offset: 223
-    length: 6
+  - offset: 250
+    length: 36
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 223
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: customers.filter { it.city == city }
   text: |
@@ -143,5 +143,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 07 Sep 2021 09:48:45 UTC
 record: -1
