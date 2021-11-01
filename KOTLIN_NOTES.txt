@@ -1,3 +1,37 @@
+Проверка строки на числа
+
+Удобный готовый метод isDigitOnly() из коробки
+Позволяет при обработке формы editText красиво возвращать данные либо заглушку
+
+
+Kotlin Structural equality
+
+== транслируется в
+а?.equals(b) ?: (b === null)
+=== это равенство по ссылке (== из java)
+
+
+Kt loops
+
+Циклы kotlin
+https://www.baeldung.com/kotlin/loops
+
+
+Kotlin collections
+
+Ну да есть mutable [mutableListOf()] и read-only [listOf()] версии
+При этом var val не надо путать
+Есть emptyList() вариации
+Начинаются с iterable также
+
+
+Kt Any Unit Nothing
+
+Any типа Object 3 метода всего содержит
+Unit типа void, можно функцию c printLn() без модификатора void или unit сделать и норм. В java наебнулось бы на компиляции
+Nothing тип если метод не отработает, типа цикл или исключение бросаем. Наследник всех типов, т.е. можем вернуть наш тип List<Data> после Todo(), который с исключением выдаёт Nothing. Якобы наши типы родители для Nothing
+
+
 Scope functions kt
 
 (Let apply) with run also
