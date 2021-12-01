@@ -1,3 +1,36 @@
+Primary constr nuance
+
+Есть разница между
+class Person(name: Strong)
+class Person(var name: Strong)
+В последнем случае доступ будет как к полю в классе. Иначе только в init, или в иниц других переменных. В моём кейсе var modifier понадобился для доступа из метода
+
+
+Rx notes
+
+.map для преобразований с данными типа конвертера (на back потоке)
+Синтаксис сеттинга результата в Livedata только такой верный: mWeatherData::setValue
+Все под капотом само сделается. Если делать mWeatherLiveData.value = weeklyWeather ошибка не будет приходить в throwable
+
+
+Rx progress bar
+
+Удобно, делается через
+doOnSubscribe()
+doAfterTerminate()
+
+
+Kt vs Java anon
+
+Удобнее, чем в джаве, меньше мусора
+val observer = object : CompletableObserver {
+override method() {}
+}
+CompletableObserver observer = new CompletableObserver() {
+Override bla blah
+});
+
+
 Проверка строки на числа
 
 Удобный готовый метод isDigitOnly() из коробки
