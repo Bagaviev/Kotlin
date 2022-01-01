@@ -1,3 +1,10 @@
+Kt
+
+Infix
+Inline
+Reified
+
+
 Primary constr nuance
 
 Есть разница между
