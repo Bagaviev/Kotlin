@@ -1,3 +1,8 @@
+Kotline moments
+
+Нельзя унаследовать data class от другогл
+
+
 Operator overloading kotlin
 
 operator fun get()
