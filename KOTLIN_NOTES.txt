@@ -1,3 +1,8 @@
+Debounce
+
+Штука в coroutines.flow, типа как фильтр, отсеивает события идущие чаще, чем timeout установленный
+
+
 Test overspecification
 
 Может стрельнуть в ногу для сравнения data классов
