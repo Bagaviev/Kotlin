@@ -1,3 +1,23 @@
+fun main() {
+    val hashSet = hashSetOf<People>()
+    
+    val pizdos1 = People("Ivan", 26)
+    val pizdos2 = People("Ivan", 26)
+    
+    hashSet.add(pizdos1)
+    hashSet.add(pizdos2)
+    
+    println(hashSet.size)
+}
+
+data class People(val name: String, val age: Int)  // 2 для просто класса, 1 для data
+
+// поинт здесь следующий - котлин под капотом генерит hashCode() equals() для класса, которые используются для правильной работы коллекции 
+// т.е есть == он же equals, и он проверит structural equality объектов, а не просто равенство ссылок (для этого используется оператор ===)
+// ну и дефолтная реализация structural equality возьмет все поля в primary constructor класса, поэтому все отработает как надо
+// для справки - hashmap просто перезапишет значение с одинаковыми ключами, а hashset не даст вставить вроде прямо
+
+
 Debounce
 
 Штука в coroutines.flow, типа как фильтр, отсеивает события идущие чаще, чем timeout установленный
