@@ -1,3 +1,23 @@
+Kotlin val var in primary constructor
+
+class Person(val name: String, age: Int)
+В первом случае это поле классе становится и к нему можно обратиться, во втором это просто аргумент конструктора, и обратиться у нему откуда то извне не выйдет
+
+
+Sealed class vs enum
+
+Первый multiple instances, второй single
+
+
+When kotlin
+
+Может использоваться без переменной, типа
+When {
+var1.isBlaBla() == true -> {}
+var2 != null -> { }
+}
+
+
 fun main() {
     val hashSet = hashSetOf<People>()
     
