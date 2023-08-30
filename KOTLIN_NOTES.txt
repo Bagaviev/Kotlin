@@ -1,3 +1,8 @@
+forEach Kotlin
+
+Если надо сделать continue, то делается return@forEach
+
+
 Kotlin val var in primary constructor
 
 class Person(val name: String, age: Int)
